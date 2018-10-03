@@ -126,7 +126,7 @@ def main():
     # creating object of TwitterClient Class
     api = TwitterClient()
     # connect to twitter and get tweets
-    analyzed_tweets = api.get_tweets('#Tesla',10)
+    analyzed_tweets = api.get_tweets('#Tesla',1000)
     if(len(analyzed_tweets)!= 0):
         # generate csv with tweets (just for reading reference)
         api.generate_csv(analyzed_tweets)
